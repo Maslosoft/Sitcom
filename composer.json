@@ -12,6 +12,11 @@
             "email": "pmaselkowski@gmail.com"
         }
     ],
+	"autoload": {
+		"psr-4": {
+			"Maslosoft\\Sitcom\\": "src"
+		}
+	},
     "require-dev": {
         "maslosoft/hedron": "~1.1"
     }

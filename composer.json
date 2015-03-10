@@ -1,23 +1,23 @@
 {
-    "name": "maslosoft/sitcom",
-    "description": "Signals based console application wrapper",
-    "require": {
-        "maslosoft/signals": "~1.0",
-        "symfony/console": "~2.6"
-    },
-    "license": "AGPL/Commercial",
-    "authors": [
-        {
-            "name": "Peter Maselkowski",
-            "email": "pmaselkowski@gmail.com"
-        }
-    ],
+	"name": "maslosoft/sitcom",
+	"description": "Signals based console application wrapper",
+	"require": {
+		"maslosoft/signals": "~1.0",
+		"symfony/console": "~2.6"
+	},
+	"license": "AGPL or Commercial",
+	"authors": [
+		{
+			"name": "Peter Maselkowski",
+			"email": "pmaselkowski@gmail.com"
+		}
+	],
 	"autoload": {
 		"psr-4": {
 			"Maslosoft\\Sitcom\\": "src"
 		}
 	},
-    "require-dev": {
-        "maslosoft/hedron": "~1.1"
-    }
+	"require-dev": {
+		"maslosoft/hedron": "~1.1"
+	}
 }

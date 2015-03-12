@@ -5,7 +5,10 @@
 		"maslosoft/signals": "~1.0",
 		"symfony/console": "~2.6"
 	},
-	"license": "AGPL or Commercial",
+	"license": [
+		"AGPL",
+		"Commercial"
+	],
 	"authors": [
 		{
 			"name": "Peter Maselkowski",

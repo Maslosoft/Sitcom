@@ -14,7 +14,7 @@
 
 ### Quick Install
 ```bash
-	composer require maslosoft/sitcom:"*"
+composer require maslosoft/sitcom:"*"
 ```
 
 <!--/header-->

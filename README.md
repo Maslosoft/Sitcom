@@ -21,6 +21,8 @@ composer require maslosoft/sitcom:"*"
 
 Sitcom allows you to call commands from many sources from one executable.
 
+**Note:** Currently this will only work for self-contained commands. If command relies on it's application, it will not be provided to it.
+
 To add command to sitcom add it via signals, here is example from hedron:
 
 ```php

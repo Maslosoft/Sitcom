@@ -42,7 +42,10 @@ EOT;
 	protected function execute(InputInterface $input, OutputInterface $output)
 	{
 		$signal = new Signal();
-		@mkdir($signal->runtimePath);
+		if(!is_dir($signal->runtimePath))
+		{
+			mkdir($signal->runtimePath);
+		}
 		(new Utility($signal))->generate();
 	}
 }

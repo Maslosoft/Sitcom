@@ -4,30 +4,32 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1d07eaf7da8a27ead90753f82146bac4",
+    "hash": "eb5aa673e66e61cef010af85f7db3a87",
     "packages": [
         {
             "name": "maslosoft/addendum",
-            "version": "3.0.11",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maslosoft/Addendum.git",
-                "reference": "6bf4e2b046a9f198bde2d477412003ec1ac89c4b"
+                "reference": "d1f5f2ffd6bbe65a0fa93a50c56ce681e034bc83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maslosoft/Addendum/zipball/6bf4e2b046a9f198bde2d477412003ec1ac89c4b",
-                "reference": "6bf4e2b046a9f198bde2d477412003ec1ac89c4b",
+                "url": "https://api.github.com/repos/Maslosoft/Addendum/zipball/d1f5f2ffd6bbe65a0fa93a50c56ce681e034bc83",
+                "reference": "d1f5f2ffd6bbe65a0fa93a50c56ce681e034bc83",
                 "shasum": ""
             },
             "require": {
                 "maslosoft/embedi": "*",
+                "maslosoft/gazebo": "*",
                 "maslosoft/signals": "*",
                 "php": ">=5.5.0",
                 "psr/log": "~1.0"
             },
             "require-dev": {
-                "maslosoft/addendumtest": "dev-master"
+                "maslosoft/addendumtest": "dev-master",
+                "maslosoft/hedron": "*"
             },
             "suggest": {
                 "monolog/monolog": "Sends your logs to files, sockets, inboxes, databases and various web services"
@@ -40,7 +42,8 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "New BSD"
+                "AGPL",
+                "Commercial"
             ],
             "authors": [
                 {
@@ -57,20 +60,20 @@
                 "annotations",
                 "metadata"
             ],
-            "time": "2015-02-27 13:41:49"
+            "time": "2015-03-17 18:02:26"
         },
         {
             "name": "maslosoft/embedi",
-            "version": "0.0.9",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maslosoft/EmbeDi.git",
-                "reference": "d7a533cf447bbb762b0359db9278ed8b48ce5979"
+                "reference": "9a830148da7ce1f777605d0c1db840ec9b834c7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maslosoft/EmbeDi/zipball/d7a533cf447bbb762b0359db9278ed8b48ce5979",
-                "reference": "d7a533cf447bbb762b0359db9278ed8b48ce5979",
+                "url": "https://api.github.com/repos/Maslosoft/EmbeDi/zipball/9a830148da7ce1f777605d0c1db840ec9b834c7a",
+                "reference": "9a830148da7ce1f777605d0c1db840ec9b834c7a",
                 "shasum": ""
             },
             "require-dev": {
@@ -95,20 +98,63 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2015-01-20 16:35:31"
+            "time": "2015-03-09 11:41:03"
         },
         {
-            "name": "maslosoft/signals",
-            "version": "1.0.9",
+            "name": "maslosoft/gazebo",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Maslosoft/Signals.git",
-                "reference": "00474618c7b82f3c9be4b78db741812c012f2d72"
+                "url": "https://github.com/Maslosoft/Gazebo.git",
+                "reference": "ff9b0126b1383e9b43ee684f10d56abe84b05313"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maslosoft/Signals/zipball/00474618c7b82f3c9be4b78db741812c012f2d72",
-                "reference": "00474618c7b82f3c9be4b78db741812c012f2d72",
+                "url": "https://api.github.com/repos/Maslosoft/Gazebo/zipball/ff9b0126b1383e9b43ee684f10d56abe84b05313",
+                "reference": "ff9b0126b1383e9b43ee684f10d56abe84b05313",
+                "shasum": ""
+            },
+            "require": {
+                "maslosoft/embedi": "*"
+            },
+            "require-dev": {
+                "codeception/codeception": "*",
+                "codeception/specify": "*",
+                "maslosoft/hedron": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Maslosoft\\Gazebo\\": "src",
+                    "Maslosoft\\GazeboTest\\Model\\": "model"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL",
+                "Commercial"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Maselkowski",
+                    "email": "pmaselkowski@gmail.com"
+                }
+            ],
+            "description": "Plugin container",
+            "time": "2015-03-18 16:15:16"
+        },
+        {
+            "name": "maslosoft/signals",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Maslosoft/Signals.git",
+                "reference": "62ba6bce6f68af7df066b0e04f290d41f4793e5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Maslosoft/Signals/zipball/62ba6bce6f68af7df066b0e04f290d41f4793e5d",
+                "reference": "62ba6bce6f68af7df066b0e04f290d41f4793e5d",
                 "shasum": ""
             },
             "require": {
@@ -117,7 +163,7 @@
                 "psr/log": "~1"
             },
             "require-dev": {
-                "maslosoft/hedron": "dev-master",
+                "maslosoft/hedron": "*",
                 "maslosoft/signalstest": "dev-master"
             },
             "type": "library",
@@ -128,7 +174,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GNU LESSER GENERAL PUBLIC LICENSE"
+                "AGPL or Commercial"
             ],
             "authors": [
                 {
@@ -147,7 +193,7 @@
                 "slot",
                 "slots"
             ],
-            "time": "2015-02-03 14:35:04"
+            "time": "2015-03-10 11:02:58"
         },
         {
             "name": "psr/log",
@@ -189,17 +235,17 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.6.4",
+            "version": "v2.6.5",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "e44154bfe3e41e8267d7a3794cd9da9a51cfac34"
+                "reference": "53f86497ccd01677e22435cfb7262599450a90d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/e44154bfe3e41e8267d7a3794cd9da9a51cfac34",
-                "reference": "e44154bfe3e41e8267d7a3794cd9da9a51cfac34",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/53f86497ccd01677e22435cfb7262599450a90d1",
+                "reference": "53f86497ccd01677e22435cfb7262599450a90d1",
                 "shasum": ""
             },
             "require": {
@@ -208,6 +254,7 @@
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/event-dispatcher": "~2.1",
+                "symfony/phpunit-bridge": "~2.7",
                 "symfony/process": "~2.1"
             },
             "suggest": {
@@ -242,22 +289,22 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-25 04:39:26"
+            "time": "2015-03-13 17:37:22"
         }
     ],
     "packages-dev": [
         {
             "name": "maslosoft/hedron",
-            "version": "1.1.2",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maslosoft/Hedron.git",
-                "reference": "7cc09cba44ef65dca6f63cdccc6cce455d20b1a9"
+                "reference": "e5fde0a4e917075282ed06d44fa40831fd313052"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maslosoft/Hedron/zipball/7cc09cba44ef65dca6f63cdccc6cce455d20b1a9",
-                "reference": "7cc09cba44ef65dca6f63cdccc6cce455d20b1a9",
+                "url": "https://api.github.com/repos/Maslosoft/Hedron/zipball/e5fde0a4e917075282ed06d44fa40831fd313052",
+                "reference": "e5fde0a4e917075282ed06d44fa40831fd313052",
                 "shasum": ""
             },
             "require": {
@@ -278,7 +325,8 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "New BSD"
+                "AGPL",
+                "Commercial"
             ],
             "authors": [
                 {
@@ -288,7 +336,7 @@
             ],
             "description": "PHP source code class header applier",
             "homepage": "http://maslosoft.com/hedron/",
-            "time": "2015-01-30 08:48:06"
+            "time": "2015-03-19 11:05:06"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -577,21 +625,24 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.6.4",
+            "version": "v2.6.5",
             "target-dir": "Symfony/Component/Finder",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "16513333bca64186c01609961a2bb1b95b5e1355"
+                "reference": "bebc7479c566fa4f14b9bcef9e32e719eabec74e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/16513333bca64186c01609961a2bb1b95b5e1355",
-                "reference": "16513333bca64186c01609961a2bb1b95b5e1355",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/bebc7479c566fa4f14b9bcef9e32e719eabec74e",
+                "reference": "bebc7479c566fa4f14b9bcef9e32e719eabec74e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "~2.7"
             },
             "type": "library",
             "extra": {
@@ -620,25 +671,28 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-03 08:01:59"
+            "time": "2015-03-12 10:28:44"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.6.4",
+            "version": "v2.6.5",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "60ed7751671113cf1ee7d7778e691642c2e9acd8"
+                "reference": "0cd8e72071e46e15fc072270ae39ea1b66b10a9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/60ed7751671113cf1ee7d7778e691642c2e9acd8",
-                "reference": "60ed7751671113cf1ee7d7778e691642c2e9acd8",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/0cd8e72071e46e15fc072270ae39ea1b66b10a9d",
+                "reference": "0cd8e72071e46e15fc072270ae39ea1b66b10a9d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "~2.7"
             },
             "type": "library",
             "extra": {
@@ -667,7 +721,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2015-01-25 04:39:26"
+            "time": "2015-03-12 10:28:44"
         },
         {
             "name": "zordius/lightncandy",

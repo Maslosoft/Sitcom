@@ -410,6 +410,59 @@ pre code, pre tt {
 <pre class="prettyprint">composer require maslosoft/sitcom:&quot;*&quot;</pre>
 <!--/header-->
 
+<p>Sitcom allows you to call commands from many sources from one executable.</p>
+<p>To add command to sitcom add it via signals, here is example from hedron:</p>
+<pre class="prettyprint">// Use statments skipped
+class RenderTemplateCommand extends Symfony\Component\Console\Command\Command
+{
+    protected function configure()
+    {
+        // irrelevant
+    }
+
+    protected function execute(InputInterface $input, OutputInterface $output)
+    {
+        // irrelevant
+    }
+
+    /**
+     * @SlotFor(Maslosoft\Sitcom\Command)
+     * @param Maslosoft\Signals\Command $signal
+     */
+    public function reactOn(\Maslosoft\Sitcom\Command $signal)
+    {
+        $signal-&gt;add($this, &#39;hedron&#39;);
+    }</pre>
+<p>Call <code>sitcom collect</code>, this will generate command list.</p>
+<p>Now call <code>sitcom</code> to list commands, here is the output:</p>
+<pre class="prettyprint">   _____ _ __
+  / ___/(_) /__________  ____ ___
+  \__ \/ / __/ ___/ __ \/ __ `__ \
+ ___/ / / /_/ /__/ /_/ / / / / / /
+/____/_/\__/\___/\____/_/ /_/ /_/
+
+Sitcom version 1.0.0
+
+Usage:
+ command [options] [arguments]
+
+Options:
+ --help (-h)           Display this help message
+ --quiet (-q)          Do not output any message
+ --verbose (-v|vv|vvv) Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+ --version (-V)        Display this application version
+ --ansi                Force ANSI output
+ --no-ansi             Disable ANSI output
+ --no-interaction (-n) Do not ask any interactive question
+
+Available commands:
+ collect          Build a list of commands
+ help             Displays help for a command
+ list             Lists commands
+hedron
+ hedron:commit    Apply headers to all php classes
+ hedron:preview   Show list of files to which headers will be applied
+ hedron:show      Show how current template will look like</pre>
 
 </body>
 </html>

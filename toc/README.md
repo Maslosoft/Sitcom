@@ -19,3 +19,67 @@ composer require maslosoft/sitcom:"*"
 
 <!--/header-->
 
+Sitcom allows you to call commands from many sources from one executable.
+
+**Note:** Currently this will only work for self-contained commands. If command relies on it's application, it will not be provided to it.
+
+To add command to sitcom add it via signals, here is example from hedron:
+
+```php
+// Use statments skipped
+class RenderTemplateCommand extends Symfony\Component\Console\Command\Command
+{
+	protected function configure()
+	{
+		// irrelevant
+	}
+
+	protected function execute(InputInterface $input, OutputInterface $output)
+	{
+		// irrelevant
+	}
+	
+	/**
+	 * @SlotFor(Maslosoft\Sitcom\Command)
+	 * @param Maslosoft\Signals\Command $signal
+	 */
+	public function reactOn(\Maslosoft\Sitcom\Command $signal)
+	{
+		$signal->add($this, 'hedron');
+	}
+```
+
+Call `sitcom collect`, this will generate command list.
+
+Now call `sitcom` to list commands, here is the output:
+
+```
+   _____ _ __
+  / ___/(_) /__________  ____ ___
+  \__ \/ / __/ ___/ __ \/ __ `__ \
+ ___/ / / /_/ /__/ /_/ / / / / / /
+/____/_/\__/\___/\____/_/ /_/ /_/
+
+Sitcom version 1.0.0
+
+Usage:
+ command [options] [arguments]
+
+Options:
+ --help (-h)           Display this help message
+ --quiet (-q)          Do not output any message
+ --verbose (-v|vv|vvv) Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+ --version (-V)        Display this application version
+ --ansi                Force ANSI output
+ --no-ansi             Disable ANSI output
+ --no-interaction (-n) Do not ask any interactive question
+
+Available commands:
+ collect          Build a list of commands
+ help             Displays help for a command
+ list             Lists commands
+hedron
+ hedron:commit    Apply headers to all php classes
+ hedron:preview   Show list of files to which headers will be applied
+ hedron:show      Show how current template will look like
+```

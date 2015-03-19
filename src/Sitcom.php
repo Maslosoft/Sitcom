@@ -33,7 +33,7 @@ LOGO;
 
 	public function __construct()
 	{
-		parent::__construct('Sitcom', '1.0.0');
+		parent::__construct('Sitcom', '1.0.1');
 		$this->add(new BuildCommand());
 		$signal = new Signal();
 		$signal->paths = [

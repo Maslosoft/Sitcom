@@ -40,7 +40,7 @@ LOGO;
 			'vendor'
 		];
 		$signal->init();
-		$signals = $signal->emit(new Command(new CommandWrapper($this)));
+		$signal->emit(new Command(new CommandWrapper($this)));
 	}
 
 	public function getHelp()

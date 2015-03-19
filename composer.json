@@ -9,6 +9,9 @@
 		"AGPL",
 		"Commercial"
 	],
+	"bin": [
+		"sitcom"
+	],
 	"authors": [
 		{
 			"name": "Peter Maselkowski",

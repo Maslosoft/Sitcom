@@ -1,10 +1,10 @@
 <?php
 
 /**
- * This software package is licensed under New BSD license.
+ * This software package is licensed under AGPL, Commercial license.
  *
  * @package maslosoft/sitcom
- * @licence New BSD
+ * @licence AGPL, Commercial
  * @copyright Copyright (c) Piotr Masełkowski <pmaselkowski@gmail.com>
  * @copyright Copyright (c) Maslosoft
  * @copyright Copyright (c) Others as mentioned in code

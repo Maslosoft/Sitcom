@@ -1,0 +1,4 @@
+## YAML Template.
+---
+require:
+   - _bootstrap.php

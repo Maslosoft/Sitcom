@@ -12,10 +12,7 @@
 
 namespace Maslosoft\Sitcom\Application;
 
-use Maslosoft\Signals\Signal;
-use Maslosoft\Sitcom\Command;
 use Maslosoft\Sitcom\Commands\BuildCommand;
-use Maslosoft\Sitcom\Helpers\CommandWrapper;
 use Maslosoft\Sitcom\Sitcom;
 use Symfony\Component\Console\Application as ConsoleApplication;
 

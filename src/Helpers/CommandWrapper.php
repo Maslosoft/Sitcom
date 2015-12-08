@@ -13,7 +13,7 @@
 
 namespace Maslosoft\Sitcom\Helpers;
 
-use Maslosoft\Sitcom\Sitcom;
+use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Command\Command;
 
 /**
@@ -26,22 +26,22 @@ class CommandWrapper
 
 	/**
 	 * Sitcom instance
-	 * @var Sitcom
+	 * @var Application
 	 */
-	private $sitcom = null;
+	private $app = null;
 
-	public function __construct(Sitcom $sitcom)
+	public function __construct(Application $app)
 	{
-		$this->sitcom = $sitcom;
+		$this->app = $app;
 	}
 
 	public function add(Command $command, $namespace = '')
 	{
-		if(strlen($namespace))
+		if (strlen($namespace))
 		{
 			$command->setName($namespace . ':' . $command->getName());
 		}
-		$this->sitcom->add($command);
+		$this->app->add($command);
 	}
 
 }

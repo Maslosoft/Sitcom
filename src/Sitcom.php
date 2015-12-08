@@ -13,6 +13,10 @@
 
 namespace Maslosoft\Sitcom;
 
+use Maslosoft\Signals\Signal;
+use Maslosoft\Sitcom\Helpers\CommandWrapper;
+use Symfony\Component\Console\Application;
+
 class Sitcom
 {
 
@@ -21,6 +25,13 @@ class Sitcom
 	 * @var string
 	 */
 	private static $_version = null;
+
+	public function addCommands(Application $app)
+	{
+		$signal = new Signal();
+		$signal->init();
+		$result = $signal->emit(new Command(new CommandWrapper($app)));
+	}
 
 	public function __get($name)
 	{

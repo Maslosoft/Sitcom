@@ -38,8 +38,7 @@ LOGO;
 		$sitcom = new Sitcom;
 		parent::__construct('Sitcom', $sitcom->getVersion());
 		$this->add(new BuildCommand());
-		$signal = new Signal();
-		$signal->emit(new Command(new CommandWrapper($sitcom)));
+		$sitcom->addCommands($this);
 	}
 
 	public function getHelp()

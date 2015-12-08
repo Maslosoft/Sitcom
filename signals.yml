@@ -1,0 +1,4 @@
+# Paths to search for signals
+paths:
+   - vendor
+   - src

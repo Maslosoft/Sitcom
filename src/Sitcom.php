@@ -13,12 +13,36 @@
 
 namespace Maslosoft\Sitcom;
 
-use Maslosoft\Signals\Signal;
-use Maslosoft\Sitcom\Commands\BuildCommand;
-use Maslosoft\Sitcom\Helpers\CommandWrapper;
-use Symfony\Component\Console\Application;
-
-class Sitcom extends Application
+class Sitcom
 {
+
+	/**
+	 * Version number holder
+	 * @var string
+	 */
+	private static $_version = null;
+
+	public function __get($name)
+	{
+		return $this->{'get' . ucfirst($name)}();
+	}
+
+	public function __set($name, $value)
+	{
+		$this->{'set' . ucfirst($name)}($value);
+	}
+
+	/**
+	 * Get version number
+	 * @return string
+	 */
+	public function getVersion()
+	{
+		if (null === self::$_version)
+		{
+			self::$_version = require __DIR__ . '/version.php';
+		}
+		return self::$_version;
+	}
 
 }

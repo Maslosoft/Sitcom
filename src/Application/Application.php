@@ -1,9 +1,13 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * This software package is licensed under AGPL, Commercial license.
+ *
+ * @package maslosoft/sitcom
+ * @licence AGPL, Commercial
+ * @copyright Copyright (c) Piotr Masełkowski <pmaselkowski@gmail.com>
+ * @copyright Copyright (c) Maslosoft
+ * @link http://maslosoft.com/sitcom/
  */
 
 namespace Maslosoft\Sitcom\Application;

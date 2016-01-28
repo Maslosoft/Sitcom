@@ -4,16 +4,16 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "eae991f9d4471d18e9c6e3b8ad7d5be1",
-    "content-hash": "2043345ed33af58261e05822d2e5f6a9",
+    "hash": "82f71b91c3c8bebd74b733f71397f8ca",
+    "content-hash": "31e4d64e70343ac7ba8e4f78ce11efc4",
     "packages": [
         {
             "name": "maslosoft/addendum",
-            "version": "4.0.3",
+            "version": "4.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maslosoft/Addendum.git",
-                "reference": "2047b4676961826ba42254baeabb61314976fcd1",
+                "reference": "734aa75bf225ab1fa909867eed6cf7ffb441c1c9",
                 "mirrors": [
                     {
                         "url": "peter@pkg.maslosoft.com/%package%/%normalizedUrl%.%type%",
@@ -23,12 +23,12 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maslosoft/Addendum/zipball/2047b4676961826ba42254baeabb61314976fcd1",
-                "reference": "2047b4676961826ba42254baeabb61314976fcd1",
+                "url": "https://api.github.com/repos/Maslosoft/Addendum/zipball/734aa75bf225ab1fa909867eed6cf7ffb441c1c9",
+                "reference": "734aa75bf225ab1fa909867eed6cf7ffb441c1c9",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "http://pkg.maslosoft.com/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "url": "http://pkg.home/repo/packagist/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -75,7 +75,7 @@
                 "annotations",
                 "metadata"
             ],
-            "time": "2015-07-09 13:02:25"
+            "time": "2016-01-21 14:38:15"
         },
         {
             "name": "maslosoft/cache",
@@ -132,11 +132,11 @@
         },
         {
             "name": "maslosoft/cli-shared",
-            "version": "0.0.5",
+            "version": "0.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maslosoft/CLIShared.git",
-                "reference": "ac5d8ee95d766f28d0403473028ed143b3dfcceb",
+                "reference": "97f4df74c179f17f27c1793adcb9b9c008fb873f",
                 "mirrors": [
                     {
                         "url": "peter@pkg.maslosoft.com/%package%/%normalizedUrl%.%type%",
@@ -146,18 +146,18 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maslosoft/CLIShared/zipball/ac5d8ee95d766f28d0403473028ed143b3dfcceb",
-                "reference": "ac5d8ee95d766f28d0403473028ed143b3dfcceb",
+                "url": "https://api.github.com/repos/Maslosoft/CLIShared/zipball/97f4df74c179f17f27c1793adcb9b9c008fb873f",
+                "reference": "97f4df74c179f17f27c1793adcb9b9c008fb873f",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "http://pkg.maslosoft.com/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "url": "http://pkg.home/repo/packagist/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
             },
             "require": {
-                "symfony/yaml": "^2.6"
+                "symfony/yaml": "^3"
             },
             "require-dev": {
                 "maslosoft/hedron": "*"
@@ -180,7 +180,7 @@
                 }
             ],
             "description": "Shared CLI application components",
-            "time": "2015-06-19 13:11:28"
+            "time": "2016-01-28 09:32:55"
         },
         {
             "name": "maslosoft/embedi",
@@ -237,11 +237,11 @@
         },
         {
             "name": "maslosoft/gazebo",
-            "version": "1.1.6",
+            "version": "1.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maslosoft/Gazebo.git",
-                "reference": "729f61d4d5e3a1153191eb94d8ae9cab2688cf4a",
+                "reference": "3951a688d57e2845729450b6f5a9104157e2744e",
                 "mirrors": [
                     {
                         "url": "peter@pkg.maslosoft.com/%package%/%normalizedUrl%.%type%",
@@ -251,12 +251,12 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maslosoft/Gazebo/zipball/729f61d4d5e3a1153191eb94d8ae9cab2688cf4a",
-                "reference": "729f61d4d5e3a1153191eb94d8ae9cab2688cf4a",
+                "url": "https://api.github.com/repos/Maslosoft/Gazebo/zipball/3951a688d57e2845729450b6f5a9104157e2744e",
+                "reference": "3951a688d57e2845729450b6f5a9104157e2744e",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "http://pkg.maslosoft.com/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "url": "http://pkg.home/repo/packagist/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -287,15 +287,15 @@
                 }
             ],
             "description": "Plugin container",
-            "time": "2015-07-09 13:26:23"
+            "time": "2016-01-09 09:30:55"
         },
         {
             "name": "maslosoft/signals",
-            "version": "1.1.11",
+            "version": "1.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maslosoft/Signals.git",
-                "reference": "a8b386dc90623e534eec4a6e4a09eb16acbee5ff",
+                "reference": "5a3b367f38ce2a05a32ac8b2ac9a1295a204df43",
                 "mirrors": [
                     {
                         "url": "peter@pkg.maslosoft.com/%package%/%normalizedUrl%.%type%",
@@ -305,12 +305,12 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maslosoft/Signals/zipball/a8b386dc90623e534eec4a6e4a09eb16acbee5ff",
-                "reference": "a8b386dc90623e534eec4a6e4a09eb16acbee5ff",
+                "url": "https://api.github.com/repos/Maslosoft/Signals/zipball/5a3b367f38ce2a05a32ac8b2ac9a1295a204df43",
+                "reference": "5a3b367f38ce2a05a32ac8b2ac9a1295a204df43",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "http://pkg.maslosoft.com/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "url": "http://pkg.home/repo/packagist/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -356,7 +356,7 @@
                 "slot",
                 "slots"
             ],
-            "time": "2015-10-22 13:08:00"
+            "time": "2015-12-22 11:34:20"
         },
         {
             "name": "psr/log",
@@ -410,11 +410,11 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.8.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "d232bfc100dfd32b18ccbcab4bcc8f28697b7e41",
+                "reference": "ebcdc507829df915f4ca23067bd59ee4ef61f6c3",
                 "mirrors": [
                     {
                         "url": "peter@pkg.maslosoft.com/%package%/%normalizedUrl%.%type%",
@@ -424,24 +424,24 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/d232bfc100dfd32b18ccbcab4bcc8f28697b7e41",
-                "reference": "d232bfc100dfd32b18ccbcab4bcc8f28697b7e41",
+                "url": "https://api.github.com/repos/symfony/console/zipball/ebcdc507829df915f4ca23067bd59ee4ef61f6c3",
+                "reference": "ebcdc507829df915f4ca23067bd59ee4ef61f6c3",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "http://pkg.maslosoft.com/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "url": "http://pkg.home/repo/packagist/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
             },
             "require": {
-                "php": ">=5.3.9",
+                "php": ">=5.5.9",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/event-dispatcher": "~2.1|~3.0.0",
-                "symfony/process": "~2.1|~3.0.0"
+                "symfony/event-dispatcher": "~2.8|~3.0",
+                "symfony/process": "~2.8|~3.0"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
@@ -451,7 +451,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -478,15 +478,15 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-11-30 12:35:10"
+            "time": "2015-12-22 10:39:06"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "0b6a8940385311a24e060ec1fe35680e17c74497",
+                "reference": "1289d16209491b584839022f29257ad859b8532d",
                 "mirrors": [
                     {
                         "url": "peter@pkg.maslosoft.com/%package%/%normalizedUrl%.%type%",
@@ -496,12 +496,12 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/0b6a8940385311a24e060ec1fe35680e17c74497",
-                "reference": "0b6a8940385311a24e060ec1fe35680e17c74497",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/1289d16209491b584839022f29257ad859b8532d",
+                "reference": "1289d16209491b584839022f29257ad859b8532d",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "http://pkg.maslosoft.com/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "url": "http://pkg.home/repo/packagist/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -509,10 +509,13 @@
             "require": {
                 "php": ">=5.3.3"
             },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -546,15 +549,15 @@
                 "portable",
                 "shim"
             ],
-            "time": "2015-11-04 20:28:58"
+            "time": "2016-01-20 09:13:37"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "f79824187de95064a2f5038904c4d7f0227fedb5",
+                "reference": "3df409958a646dad2bc5046c3fb671ee24a1a691",
                 "mirrors": [
                     {
                         "url": "peter@pkg.maslosoft.com/%package%/%normalizedUrl%.%type%",
@@ -564,23 +567,23 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/f79824187de95064a2f5038904c4d7f0227fedb5",
-                "reference": "f79824187de95064a2f5038904c4d7f0227fedb5",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/3df409958a646dad2bc5046c3fb671ee24a1a691",
+                "reference": "3df409958a646dad2bc5046c3fb671ee24a1a691",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "http://pkg.maslosoft.com/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "url": "http://pkg.home/repo/packagist/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.5.9"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -607,17 +610,17 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-11-30 12:35:10"
+            "time": "2015-12-26 13:39:53"
         }
     ],
     "packages-dev": [
         {
             "name": "maslosoft/hedron",
-            "version": "1.1.8",
+            "version": "1.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maslosoft/Hedron.git",
-                "reference": "cb2551a3c61eaac8d70693b40b6035fa8bf62dd7",
+                "reference": "7bdba7e5b33df887197f4212cdff0415e0b0be13",
                 "mirrors": [
                     {
                         "url": "peter@pkg.maslosoft.com/%package%/%normalizedUrl%.%type%",
@@ -627,21 +630,21 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maslosoft/Hedron/zipball/cb2551a3c61eaac8d70693b40b6035fa8bf62dd7",
-                "reference": "cb2551a3c61eaac8d70693b40b6035fa8bf62dd7",
+                "url": "https://api.github.com/repos/Maslosoft/Hedron/zipball/7bdba7e5b33df887197f4212cdff0415e0b0be13",
+                "reference": "7bdba7e5b33df887197f4212cdff0415e0b0be13",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "http://pkg.maslosoft.com/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "url": "http://pkg.home/repo/packagist/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
             },
             "require": {
                 "phpunit/php-code-coverage": "~2",
-                "symfony/console": "~2",
-                "symfony/finder": "~2",
-                "symfony/yaml": "~2",
+                "symfony/console": "~3",
+                "symfony/finder": "~3",
+                "symfony/yaml": "~3",
                 "zordius/lightncandy": "0.18.*"
             },
             "bin": [
@@ -666,7 +669,7 @@
             ],
             "description": "PHP source code class header applier",
             "homepage": "http://maslosoft.com/hedron/",
-            "time": "2015-08-18 06:54:17"
+            "time": "2016-01-28 15:34:30"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -1026,11 +1029,11 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.8.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "ead9b07af4ba77b6507bee697396a5c79e633f08",
+                "reference": "8617895eb798b6bdb338321ce19453dc113e5675",
                 "mirrors": [
                     {
                         "url": "peter@pkg.maslosoft.com/%package%/%normalizedUrl%.%type%",
@@ -1040,23 +1043,23 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/ead9b07af4ba77b6507bee697396a5c79e633f08",
-                "reference": "ead9b07af4ba77b6507bee697396a5c79e633f08",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/8617895eb798b6bdb338321ce19453dc113e5675",
+                "reference": "8617895eb798b6bdb338321ce19453dc113e5675",
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "http://pkg.maslosoft.com/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "url": "http://pkg.home/repo/packagist/dists/%package%/%version%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.5.9"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -1083,7 +1086,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2015-10-30 20:15:42"
+            "time": "2015-12-05 11:13:14"
         },
         {
             "name": "zordius/lightncandy",

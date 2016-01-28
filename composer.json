@@ -2,8 +2,8 @@
 	"name": "maslosoft/sitcom",
 	"description": "Signals based console application wrapper",
 	"require": {
-		"maslosoft/signals": "~1.0",
-		"symfony/console": "~2.6"
+		"maslosoft/signals": "*",
+		"symfony/console": "~3"
 	},
 	"license": [
 		"AGPL",
@@ -24,6 +24,6 @@
 		}
 	},
 	"require-dev": {
-		"maslosoft/hedron": "~1.1"
+		"maslosoft/hedron": "*"
 	}
 }

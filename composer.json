@@ -3,7 +3,7 @@
 	"description": "Signals based console application wrapper",
 	"require": {
 		"maslosoft/signals": "*",
-		"symfony/console": "~3"
+		"symfony/console": ">=2.7 <5.0"
 	},
 	"license": [
 		"AGPL",

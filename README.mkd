@@ -1,7 +1,7 @@
 <!--header-->
 <!-- Auto generated do not modify between `header` and `/header` -->
 
-# <a href="https://maslosoft.com/sitcom/">Maslosoft Sitcom</a>
+# <a href="https://maslosoft.com/sitcom/"><img src="https://maslosoft.com/sitcom/sitcom.svg" style="height:24px;" alt="Sitcom Logo"></a> <a href="https://maslosoft.com/sitcom/">Maslosoft Sitcom</a>
 <a href="https://maslosoft.com/sitcom/">_Signals based console application wrapper_</a>
 
 <a href="https://packagist.org/packages/maslosoft/sitcom" title="Latest Stable Version">

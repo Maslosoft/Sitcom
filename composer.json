@@ -2,8 +2,11 @@
 	"name": "maslosoft/sitcom",
 	"description": "Signals based console application wrapper",
 	"require": {
-		"maslosoft/signals": "*",
 		"symfony/console": ">=2.7 <=6.0"
+	}
+	,
+	"require-dev": {
+		"roave/security-advisories": "dev-latest"
 	},
 	"license": [
 		"AGPL",

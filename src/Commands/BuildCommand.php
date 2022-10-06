@@ -25,7 +25,7 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class BuildCommand extends Command
 {
-	protected function configure()
+	protected function configure(): void
 	{
 		$this->setName("collect");
 		$this->setDescription("Build a list of commands");
@@ -38,7 +38,7 @@ EOT;
 		$this->setHelp($help);
 	}
 
-	protected function execute(InputInterface $input, OutputInterface $output)
+	protected function execute(InputInterface $input, OutputInterface $output): void
 	{
 		$signal = new Signal();
 		if(!is_dir($signal->runtimePath))

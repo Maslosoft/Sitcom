@@ -23,7 +23,7 @@ class Sitcom
 	/**
 	 * Config file name
 	 */
-	const ConfigName = "sitcom";
+	public const ConfigName = "sitcom";
 
 	/**
 	 * Version number holder
@@ -45,7 +45,7 @@ class Sitcom
 		}
 	}
 
-	public function addCommands(Application $app)
+	public function addCommands(Application $app): void
 	{
 		$signal = new Signal();
 		$signal->init();
@@ -66,7 +66,7 @@ class Sitcom
 	 * Get version number
 	 * @return string
 	 */
-	public function getVersion()
+	public function getVersion(): string
 	{
 		if (null === self::$_version)
 		{

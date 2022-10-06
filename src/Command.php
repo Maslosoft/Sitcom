@@ -34,7 +34,7 @@ class Command
 		$this->app = $app;
 	}
 
-	public function add(SymfonyCommand $command, $namespace = '')
+	public function add(SymfonyCommand $command, $namespace = ''): void
 	{
 		$this->app->add($command, $namespace);
 	}

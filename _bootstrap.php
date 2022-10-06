@@ -1,0 +1,2 @@
+<?php
+// Example bootstrap file

@@ -29,7 +29,7 @@ class Sitcom
 	 * Version number holder
 	 * @var string
 	 */
-	private static $_version = null;
+	private static ?string $_version = null;
 
 	public function __construct($configName = self::ConfigName)
 	{

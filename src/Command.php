@@ -27,7 +27,7 @@ class Command
 	 *
 	 * @var CommandWrapper
 	 */
-	private $app = null;
+	private CommandWrapper $app;
 
 	public function __construct($app)
 	{

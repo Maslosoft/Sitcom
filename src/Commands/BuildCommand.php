@@ -12,6 +12,7 @@
 
 namespace Maslosoft\Sitcom\Commands;
 
+use Maslosoft\Cli\Shared\Io;
 use Maslosoft\Signals\Signal;
 use Maslosoft\Signals\Utility;
 use Symfony\Component\Console\Command\Command;
@@ -38,13 +39,14 @@ EOT;
 		$this->setHelp($help);
 	}
 
-	protected function execute(InputInterface $input, OutputInterface $output): void
+	protected function execute(InputInterface $input, OutputInterface $output): int
 	{
 		$signal = new Signal();
 		if(!is_dir($signal->runtimePath))
 		{
-			mkdir($signal->runtimePath);
+			Io::mkdir($signal->runtimePath);
 		}
 		(new Utility($signal))->generate();
+		return 0;
 	}
 }

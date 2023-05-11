@@ -27,7 +27,7 @@ class CommandWrapper
 	 * Sitcom instance
 	 * @var Application
 	 */
-	private $app = null;
+	private Application $app;
 
 	public function __construct(Application $app)
 	{

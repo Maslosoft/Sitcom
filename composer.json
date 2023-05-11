@@ -2,7 +2,9 @@
 	"name": "maslosoft/sitcom",
 	"description": "Signals based console application wrapper",
 	"require": {
-		"symfony/console": ">=2.7 <=6.0"
+		"php": ">=8.2",
+		"symfony/console": ">=2.7 <7.0",
+		"maslosoft/signals": "*"
 	}
 	,
 	"require-dev": {

@@ -1,32 +1,32 @@
 {
-	"name": "maslosoft/sitcom",
-	"description": "Signals based console application wrapper",
-	"require": {
-		"php": ">=8.2",
-		"symfony/console": ">=2.7",
-		"maslosoft/signals": "*"
-	}
-	,
-	"require-dev": {
-		"roave/security-advisories": "dev-latest"
-	},
-	"license": [
-		"AGPL",
-		"Commercial"
-	],
-	"bin": [
-		"sitcom"
-	],
-	"authors": [
-		{
-			"name": "Peter Maselkowski",
-			"email": "pmaselkowski@gmail.com"
-		}
-	],
-	"autoload": {
-		"psr-4": {
-			"Maslosoft\\Sitcom\\": "src"
-		}
-	},
-	"homepage": "https://maslosoft.com/sitcom/"
+    "name": "maslosoft/sitcom",
+    "version": "2.0.1",
+    "description": "Signals based console application wrapper",
+    "require": {
+        "php": ">=8.2",
+        "symfony/console": ">=2.7",
+        "maslosoft/signals": "*"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "license": [
+        "AGPL",
+        "Commercial"
+    ],
+    "bin": [
+        "sitcom"
+    ],
+    "authors": [
+        {
+            "name": "Peter Maselkowski",
+            "email": "pmaselkowski@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Maslosoft\\Sitcom\\": "src"
+        }
+    },
+    "homepage": "https://maslosoft.com/sitcom/"
 }

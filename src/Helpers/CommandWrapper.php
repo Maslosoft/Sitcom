@@ -36,7 +36,7 @@ class CommandWrapper
 
 	public function add(Command $command, $namespace = ''): void
 	{
-		if ($namespace != '')
+		if ($namespace !== '')
 		{
 			$command->setName($namespace . ':' . $command->getName());
 		}
